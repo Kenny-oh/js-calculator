@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-dark text-white">
+              <h3 class="card-title mb-0">Calculator</h3>
+            </div>
+            <div class="card-body">
+              <div class="row mb-2">
+                <div class="col-12">
+                  <div class="text-right">
+                    <span id="previous-operand"></span>
+                    <span id="current-operand"></span>
+                  </div>
+                  <input type="text" class="form-control" id="display" readonly>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-9">
+                  <div class="row">
+                    <div class="col-4">
+                      <button class="btn btn-secondary btn-block" id="clear">
+                        C
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-secondary btn-block" id="sign">
+                        +/-
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-secondary btn-block" id="percent">
+                        %
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="seven">
+                        7
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="eight">
+                        8
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="nine">
+                        9
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="four">
+                        4
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="five">
+                        5
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="six">
+                        6
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="one">
+                        1
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="two">
+                        2
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="three">
+                        3
+                      </button>
+                    </div>
+                  </div>
+                  <div id="zero-row" class="row">
+                    <div class="col-8">
+                      <button class="btn btn-light btn-block" id="zero">
+                        0
+                      </button>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn btn-light btn-block" id="decimal">
+                        .
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="btn-group-vertical" role="group">
+                    <button class="btn btn-warning btn-block" id="divide">
+                      ÷
+                    </button>
+                    <button class="btn btn-warning btn-block" id="multiply">
+                      ×
+                    </button>
+                    <button class="btn btn-warning btn-block" id="subtract">
+                      -
+                    </button>
+                    <button class="btn btn-warning btn-block" id="add">
+                      +
+                    </button>
+                    <button class="btn btn-warning btn-block" id="equals">
+                      =
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
